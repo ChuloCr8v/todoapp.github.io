@@ -1,0 +1,47 @@
+.todo-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.todo-item {
+  flex: 1;
+  color: black;
+  background-color: white;
+  padding: 2px 7px;
+  width: 250px;
+  overflow: hidden;
+  list-style-type: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.check-btn, .trash-btn {
+  padding: 2px 6px;
+}
+
+.check-btn {
+  background: green;
+}
+
+.trash-btn {
+  background: red;
+}
+
+.fa-check, .fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  text-decoration-color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.delete {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(50%);
+  opacity: 0;
+}
